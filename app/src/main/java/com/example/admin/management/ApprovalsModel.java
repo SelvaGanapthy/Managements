@@ -5,7 +5,7 @@ package com.example.admin.management;
  */
 
 public class ApprovalsModel {
-    String poId, callCentername, vendorName, approvalName;
+    String poId, costCentername, vendorName, approvalName;
     double amount;
 
     public String getPoId() {
@@ -16,12 +16,12 @@ public class ApprovalsModel {
         this.poId = poId;
     }
 
-    public String getCallCentername() {
-        return callCentername;
+    public String getcostCentername() {
+        return costCentername;
     }
 
-    public void setCallCentername(String callCentername) {
-        this.callCentername = callCentername;
+    public void setcostCentername(String costCentername) {
+        this.costCentername = costCentername;
     }
 
     public String getVendorName() {
