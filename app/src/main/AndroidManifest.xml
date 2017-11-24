@@ -20,7 +20,8 @@
         </activity>
         <activity android:name=".activities.LoginActivity" />
         <activity android:name=".activities.MainActivity" />
-        <activity android:name=".activities.Transaction"></activity>
+        <activity android:name=".fragments.Transaction" />
+        <activity android:name=".activities.Execution"></activity>
     </application>
 
 </manifest>

@@ -10,9 +10,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
-import com.example.admin.management.ApprovalsAdapter;
-import com.example.admin.management.ApprovalsModel;
+import com.example.admin.management.adapters.ApprovalsAdapter;
+import com.example.admin.management.models.ApprovalsModel;
 import com.example.admin.management.R;
+import com.example.admin.management.fragments.Transaction;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -80,6 +81,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.bt_transactions:
                 Intent i = new Intent(MainActivity.this, Transaction.class);
                 startActivity(i);
+                break;
+            case R.id.bt_execution:
+                Intent intent = new Intent(MainActivity.this, Execution.class);
+                startActivity(intent);
                 break;
 
         }

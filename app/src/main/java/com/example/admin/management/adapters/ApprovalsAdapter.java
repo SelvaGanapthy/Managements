@@ -1,4 +1,4 @@
-package com.example.admin.management;
+package com.example.admin.management.adapters;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -8,12 +8,13 @@ import android.support.v7.widget.SwitchCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.Filter;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.admin.management.R;
+import com.example.admin.management.models.ApprovalsModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -69,8 +70,9 @@ public class ApprovalsAdapter extends RecyclerView.Adapter<ApprovalsAdapter.View
                         }
                     });
                     alert.setTitle("\t\t\t\tGive Approvals");
-                    alert.setMessage("\t\tAre you sure want to give approval for  " + approvalsmodel.getApprovalName());
+                    alert.setMessage("Are you sure want to give approval for  " + approvalsmodel.getApprovalName());
                     alertDialog = alert.create();
+                    alert.setCancelable(false);
                     alert.show();
 
                 } else

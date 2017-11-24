@@ -1,4 +1,4 @@
-package com.example.admin.management;
+package com.example.admin.management.models;
 
 /**
  * Created by Admin on 11/22/2017.

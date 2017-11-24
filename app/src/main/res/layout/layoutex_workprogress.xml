@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -20,7 +21,7 @@
             android:textColor="#6b15ee"
             android:textSize="18sp" />
 
-        <TextView
+        <EditText
             android:id="@+id/tv_fromDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,7 +38,7 @@
             android:textColor="#6b15ee"
             android:textSize="18sp" />
 
-        <TextView
+        <EditText
             android:id="@+id/tv_toDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -57,16 +58,26 @@
         android:paddingTop="1dp">
 
         <TextView
-            android:layout_width="120dp"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#FFF"
             android:gravity="center"
-            android:text="Material Name"
+            android:text="SINO"
             android:textSize="17dp" />
 
         <TextView
-            android:layout_width="60dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFF"
+            android:gravity="center"
+            android:text="Specification"
+            android:textSize="17dp" />
+
+
+        <TextView
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#FFF"
@@ -75,30 +86,12 @@
             android:textSize="17dp" />
 
         <TextView
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#FFF"
-            android:gravity="center"
-            android:text="Qty"
-            android:textSize="17dp" />
-
-        <TextView
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#FFF"
-            android:gravity="center"
-            android:text="Rate"
-            android:textSize="17dp" />
-
-        <TextView
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#FFF"
             android:gravity="center"
-            android:text="Amount"
+            android:text="Qty"
             android:textSize="17dp" />
 
     </LinearLayout>
@@ -109,7 +102,7 @@
         android:scrollbars="horizontal|vertical">
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv"
+            android:id="@+id/rv_workProgress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/l1">
@@ -117,32 +110,4 @@
         </android.support.v7.widget.RecyclerView>
     </HorizontalScrollView>
 
-    <LinearLayout
-        android:id="@+id/l2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/recyclerview"
-        android:background="#000000"
-        android:orientation="horizontal"
-        android:paddingBottom="1dp"
-        android:paddingTop="1dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#FFF"
-            android:gravity="end"
-            android:text="Total : "
-            android:textSize="17dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#FFF"
-            android:gravity="center"
-            android:text="400000"
-            android:textSize="17dp" />
-    </LinearLayout>
 </LinearLayout>
